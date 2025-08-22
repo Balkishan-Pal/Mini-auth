@@ -10,7 +10,7 @@ A mini frontend application implementing a **feed page with authentication flow*
 
 ## GitHub Repository
 
-[View Repository](https://github.com/your-username/mini-auth)
+[View Repository](https://github.com/Balkishan-Pal/Mini-auth)
 
 ---
 
