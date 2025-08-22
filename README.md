@@ -6,7 +6,8 @@ A React + TypeScript project demonstrating a mini authentication system with a f
 
 ## Table of Contents
 
-- [Demo](#demo)
+- 
+Live Demo: [https://mini-auth-gamma.vercel.app/](https://mini-auth-gamma.vercel.app/)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Project Structure](#project-structure)
@@ -21,7 +22,6 @@ A React + TypeScript project demonstrating a mini authentication system with a f
 
 - Users can sign in or sign up.
 - Feed displays posts with emoji reactions, images, timestamps, and usernames.
-- Toast notifications appear on successful login.
 - Sign-in and sign-up pages are centered, while feed retains full layout.
 
 ---
@@ -31,7 +31,6 @@ A React + TypeScript project demonstrating a mini authentication system with a f
 - **Authentication**: Sign-in and Sign-up forms.
 - **Feed**: Display posts with emojis, images, timestamps, and usernames derived from email.
 - **Emoji Picker**: Add emojis to posts.
-- **Toast Notifications**: Feedback on login/sign-up.
 - **Responsive Layout**: Navbar fixed, feed and auth pages styled appropriately.
 - **Tailwind Styling**: Reusable input and button styles.
 
@@ -49,7 +48,6 @@ A React + TypeScript project demonstrating a mini authentication system with a f
 ---
 
 ## Project Structure
-
 
 
 
@@ -100,19 +98,12 @@ yarn dev
 
 
 Usage
-
 Navigate to /signin or /signup to authenticate.
-
 Post messages in the feed, add emojis and images.
 
-Toast notifications appear on successful login.
-
 Customizations
-
 Adding Images: Add more images to src/assets and update dummy posts.
-
 Emoji Picker: Extend the list of emojis in the InputBox component.
-
 Navbar: Customize links or user display.
 
-Theme: Tailwind CSS can be modified in tailwind.config.js.
+Theme: Tailwind CSS can be modified in tailwind.config.js and index.css
