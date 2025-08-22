@@ -53,25 +53,7 @@ A mini frontend application implementing a **feed page with authentication flow*
 
 
 
-## Project Structure
-
-
-
-assets/           # Images and icons
-components/       # Reusable components
-  Common/
-    InputBox/
-    Post/
-  NavBar/
-pages/
-  Feed.tsx
-  SignIn.tsx
-  SignUp.tsx
-utils/            # Utility functions (timeAgo, formatNameFromEmail)
-Constants/        # Dummy posts and other constants
-App.tsx
-index.css
-
+<pre> ``` ├─ assets/ # Images and icons ├─ components/ # Reusable components │ ├─ Common/ │ │ ├─ InputBox/ │ │ ├─ Post/ │ │ └─ Toast/ │ └─ NavBar/ ├─ pages/ │ ├─ Feed.tsx │ ├─ SignIn.tsx │ └─ SignUp.tsx ├─ utils/ # Utility functions (timeAgo, formatNameFromEmail) ├─ Constants/ # Dummy posts and other constants ├─ App.tsx └─ index.css ``` </pre>
 
 
 
