@@ -1,49 +1,51 @@
-# Mini Auth & Feed Application
+# Mini Auth Frontend App
 
-A React + TypeScript project demonstrating a mini authentication system with a feed, including user sign-in, sign-up, posts, emojis, and toast notifications. Tailwind CSS is used for styling.
-
----
-
-## Table of Contents
-
-- 
-Live Demo: [https://mini-auth-gamma.vercel.app/](https://mini-auth-gamma.vercel.app/)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Customizations](#customizations)
-- [License](#license)
+A mini frontend application implementing a **feed page with authentication flow**. Built using **React**, **TypeScript**, and **TailwindCSS**. This project demonstrates a modular and maintainable approach to UI design and frontend interactions.
 
 ---
 
-## Demo
+## Live Preview
 
-- Users can sign in or sign up.
-- Feed displays posts with emoji reactions, images, timestamps, and usernames.
-- Sign-in and sign-up pages are centered, while feed retains full layout.
+[View Live App](https://mini-auth-gamma.vercel.app/)
+
+## GitHub Repository
+
+[View Repository](https://github.com/your-username/mini-auth)
 
 ---
 
 ## Features
 
-- **Authentication**: Sign-in and Sign-up forms.
-- **Feed**: Display posts with emojis, images, timestamps, and usernames derived from email.
-- **Emoji Picker**: Add emojis to posts.
-- **Responsive Layout**: Navbar fixed, feed and auth pages styled appropriately.
-- **Tailwind Styling**: Reusable input and button styles.
+### Core Features
 
----
+- **Frontend Only**: Fully implemented in React with TypeScript and TailwindCSS.
+- **Authentication Flow**:
+  - Users can **Sign In** or **Sign Up** via dedicated auth pages.
+  - Feed page triggers a **modal** for unauthenticated users when trying to interact.
+  - Authenticated users can fully interact with the feed.
 
-## Technologies
+### Feed Page
 
-- React 18
-- TypeScript
-- React Router DOM
-- Tailwind CSS
-- Vite
-- JavaScript / ES6+
+- **Post Editor**:
+  - Users can enter text and publish new posts.
+  - Posts appear immediately in the feed upon publishing.
+  - Other buttons (e.g., reactions) show an alert: *"Function not implemented"*.
+
+- **Posts Display**:
+  - Each post displays user **name** (derived from email), **emoji**, **timestamp** (`5 mins ago`, `1 hour ago`, etc.), and optional image.
+  - Supports **dummy posts** for demonstration.
+
+- **UI & Interactions**:
+  - Modular components for **InputBox**, **Post**, and **Navbar**.
+  - Smooth **modal** animations.
+  - Responsive design for mobile and tablet screens.
+
+### Extras
+
+- **Reusable Components**: Built modularly for maintainability and easy extension.
+- **Utility Functions**: Includes `timeAgo` for timestamps and `formatNameFromEmail` for user display.
+- **Random Images**: New posts can optionally assign a random image from assets.
+- **Global Font**: `Inter` applied consistently throughout the app.
 
 ---
 
@@ -51,24 +53,25 @@ Live Demo: [https://mini-auth-gamma.vercel.app/](https://mini-auth-gamma.vercel.
 
 
 
-src/
-│
-├─ assets/ # Images and icons
+## Project Structure
 
-├─ components/ # Reusable components
-│ ├─ Common/
-│ │ ├─ InputBox/
-│ │ ├─ Post/
-│ │ └─ Toast/
-│ └─ NavBar/
-├─ pages/
-│ ├─ Feed.tsx
-│ ├─ SignIn.tsx
-│ └─ SignUp.tsx
-├─ utils/ # Utility functions (e.g., timeAgo, formatNameFromEmail)
-├─ Constants/ # Dummy posts and other constants
-├─ App.tsx
-└─ index.css
+
+
+assets/           # Images and icons
+components/       # Reusable components
+  Common/
+    InputBox/
+    Post/
+  NavBar/
+pages/
+  Feed.tsx
+  SignIn.tsx
+  SignUp.tsx
+utils/            # Utility functions (timeAgo, formatNameFromEmail)
+Constants/        # Dummy posts and other constants
+App.tsx
+index.css
+
 
 
 
