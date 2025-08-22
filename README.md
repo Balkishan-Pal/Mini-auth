@@ -54,6 +54,7 @@ Live Demo: [https://mini-auth-gamma.vercel.app/](https://mini-auth-gamma.vercel.
 src/
 │
 ├─ assets/ # Images and icons
+
 ├─ components/ # Reusable components
 │ ├─ Common/
 │ │ ├─ InputBox/
